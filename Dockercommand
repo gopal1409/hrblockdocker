@@ -22,3 +22,15 @@ docker networking
    74  docker ps
 
 
+docker networking communicate
+ 97  docker network ls
+   98  docker network
+   99  docker network create my_app_network
+  100  docker network ls
+  101  docker container run -d --name myproxy --network my_app_network nginx:alpine
+  102  docker container run -d --name revproxy --network my_app_network nginx:alpine
+  103  docker ps
+  104  docker network ls
+  105  docker network inspect my_app_network
+  106  docker container exec -it myproxy ping revproxy
+  107  docker container exec -it revproxy ping myproxy
