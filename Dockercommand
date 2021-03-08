@@ -14,5 +14,11 @@ docker container run --publish 80:80 --detach nginx
    55  docker stop mongo
    56  docker rm mongo
    57  docker ps
+docker networking
+ 70  docker container run -d --name webserver -p 80:80 httpd
+   71  docker container run -d --name webserver  httpd
+   72  docker container run -d --name proxy  httpd
+   73  docker container run -d --name proxy1  httpd
+   74  docker ps
 
 
