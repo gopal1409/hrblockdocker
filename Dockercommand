@@ -3,4 +3,10 @@ docker container run --publish 80:80 --detach nginx
    17  docker images
    
    19  docker ps
+   22  docker container run --publish 82:80 --detach httpd
+   23  docker ps
+   24  docker run --name mongo --detach mongo
+
+   26  docker container run -d -p 3306:3306 --name db -e MYSQL_RANDOM_ROOT_PASSWORD=yes mysql
+
 
