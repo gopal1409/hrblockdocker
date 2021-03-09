@@ -1,0 +1,18 @@
+145  mkdir firstimage
+  146  cd firstimage/
+  147  java
+  148  apt install default-jre
+  149  apt install default-jdk
+  150  javac
+  151  vi HelloWorld.java
+  152  ls
+  153  javac HelloWorld.java
+  154  java HelloWorld
+  155  ls
+  156  vi manifest.txt
+  157  jar cfm HelloWorld.jar manifest.txt HelloWorld.class
+  158  java -jar HelloWorld.jar
+  159  vi dockerfile
+  160  docker build -t myapp .
+  161  docker images
+  162  docker run myapp
