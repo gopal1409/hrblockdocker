@@ -34,3 +34,19 @@ docker networking communicate
   105  docker network inspect my_app_network
   106  docker container exec -it myproxy ping revproxy
   107  docker container exec -it revproxy ping myproxy
+
+volumes
+121  docker container run -d --name mysql -e MYSQL_ALLOW_EMPTY_PASSWORD=true -v mysql-db:/var/lib/mysql mysql:8.0.23
+  122  docker ps
+  123  docker volume ls
+  124  docker ps
+  125  docker stop f468
+  126  docker rm f468
+  127  docker volume ls
+  128  docker container run -d --name mysql -e MYSQL_ALLOW_EMPTY_PASSWORD=true -v mysql-db:/var/lib/mysql mysql
+  129  docker volume ls
+  130  docker ps
+  131  docker container inspect 9414
+  132  history
+  133  docker ps -a
+  134  history
